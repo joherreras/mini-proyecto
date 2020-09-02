@@ -1,0 +1,138 @@
+
+.home-nav{
+    background-image: url("/assets/img/slider/header-contacto.jpg");
+    padding-bottom: 3em;
+    padding-top: 12rem;
+}
+/***cambio color***/
+.fixed-color{
+    background-color: white;
+    padding: 2.5rem 0px 0.5rem 0px;
+    
+}
+.fixed-color a{
+    color:black;
+}
+.fixed-color img{
+    width: 70%;
+}
+/*******/
+.titulo-header{
+    color:white;
+}
+.titulo-header h1{
+    font-size: 3.8rem;
+    width: 55%;
+}
+.cl-amarillo{
+    color:#ffce35;
+}
+
+
+.titulo-header p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #fff;
+    width: 55%;
+    font-weight: 100;
+}
+
+.BtnDefault {
+    background: #ffce35;
+    color: #404041;
+    border-radius: 50px;
+    padding: 12px 36px;
+    border: 1px solid #ffce35;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.2);
+    min-width: 220px;
+    font-size: 0.9rem;
+    /* margin: 0 auto; */
+    max-height: 48px;
+    z-index: 1;
+}
+/***NOSOTROS***/
+.titulo-nosotros{
+    background-image: url("/assets/img/slider/header-nosotros.jpg");
+}
+.nosotros .titulo-nosotros{
+    padding: 3rem;
+}
+
+.nosotros .titulo-nosotros h1{
+    padding-top: 12rem;
+    font-size: 3.4rem;
+    line-height:3.4rem;
+     margin-bottom: 1rem;
+    width: 70%;
+    color: white;
+}
+.nosotros .titulo-nosotros p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #fff;
+    width: 55%;
+    font-weight: 100;
+}
+.nosotros .que-hacemos{
+    padding: 4rem
+}
+.nosotros .que-hacemos h1{
+    color: #444341;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+}
+.nosotros .que-hacemos p{
+    font-size: 1.2rem;
+}
+
+/***/
+.programa{
+    padding: 4rem 0;
+}
+.programa h1{
+    color: #444341;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+}
+
+.programa p{
+    font-size: 1rem;
+}
+
+/*****/
+
+.curso{
+    background-image: url("/assets/img/background/bg-estemos.jpg");
+    background-size: auto;
+}
+
+.curso p {
+    color:white;
+}
+
+
+/**contacto***/
+.contacto{
+    background-color: #eae5dc ;
+}
+.contacto a{
+    color:#4cc0b5;
+}
+.contacto h1{
+    color: #444341;
+}
+.contacto h2{
+        font-size: 1.5rem;
+        color: #444341;
+}
+.contacto h3{
+    font-size: 1.2rem;
+    color: #6d6e70;
+}

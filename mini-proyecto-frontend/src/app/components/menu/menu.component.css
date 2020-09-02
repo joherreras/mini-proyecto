@@ -1,0 +1,47 @@
+
+.nav-usuario{
+    background-color: #EAE5DC;
+    z-index: 10000000;
+}
+
+.nav-usuario a{
+    color: black;
+}
+.nav-usuario a:hover{
+    color: #32A598;
+}
+/******/
+.header-menu {
+    padding: 3.5rem 0px 1.5rem 0px;
+    background-color: transparent;
+}
+ 
+.header-menu  ul{
+    margin: 0;
+    width: 100%;
+    position: relative;
+    top: 15px;
+}
+.header-menu  a {
+    font-size: 0.9rem;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.header-menu a:hover{
+    color:#ffce35;
+}
+/***cambio color***/
+.fixed-color{
+    background-color: white;
+    padding: 2.5rem 0px 0.5rem 0px;
+    
+}
+.fixed-color a{
+    color:black;
+}
+.fixed-color img{
+    width: 70%;
+}

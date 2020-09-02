@@ -1,0 +1,37 @@
+.home-nav{
+    background-image: url("/assets/img/slider/header-resultados.jpg");
+    padding-bottom: 3em;
+    padding-top: 12rem;
+}
+/***cambio color***/
+.fixed-color{
+    background-color: white;
+    padding: 2.5rem 0px 0.5rem 0px;
+    
+}
+.fixed-color a{
+    color:black;
+}
+.fixed-color img{
+    width: 70%;
+}
+/*******/
+.titulo-header{
+    color:white;
+}
+.titulo-header h1{
+    font-size: 3.8rem;
+    width: 55%;
+}
+.cl-amarillo{
+    color:#ffce35;
+}
+
+
+.titulo-header p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #fff;
+    width: 55%;
+    font-weight: 100;
+}

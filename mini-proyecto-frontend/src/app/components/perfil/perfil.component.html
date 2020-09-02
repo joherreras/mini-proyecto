@@ -1,0 +1,110 @@
+<section class="home-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col titulo-header">
+                <h1>Administración de <span class="cl-amarillo">Estudiantes</span></h1>
+                <p>modificar / eliminar</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col mt-4 mb-4">
+            <div style="width: 70%; margin: 1em auto;" class="mat-elevation-z2">
+                <mat-table class="tabla-estudiante" [dataSource]="estudiantes">
+                    <ng-container matColumnDef="rut">
+                        <mat-header-cell *matHeaderCellDef> RUT </mat-header-cell>
+                        <mat-cell *matCellDef="let estudiantes"> {{estudiantes.rut}} </mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="nombres">
+                        <mat-header-cell *matHeaderCellDef> Nombres </mat-header-cell>
+                        <mat-cell *matCellDef="let estudiantes"> {{estudiantes.nombres}} </mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="apellidos">
+                        <mat-header-cell *matHeaderCellDef> Apellidos </mat-header-cell>
+                        <mat-cell *matCellDef="let estudiantes"> {{estudiantes.apellidos}} </mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="correo">
+                        <mat-header-cell *matHeaderCellDef> Correo Electrónico </mat-header-cell>
+                        <mat-cell *matCellDef="let estudiantes"> {{estudiantes.correo}} </mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="idCurso">
+                        <mat-header-cell *matHeaderCellDef> Curso </mat-header-cell>
+                        <mat-cell *matCellDef="let estudiantes"> {{estudiantes.idCurso}} </mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="opciones">
+                        <mat-header-cell *matHeaderCellDef> Eliminar </mat-header-cell>
+                        <mat-cell *matCellDef="let estudiante; index as i">
+                            <button mat-mini-fab color="warn" (click)="eliminar(i)" class="btn-danger">
+                                <mat-icon>delete</mat-icon>
+                            </button>
+                            <button (click)="guardar(i)" class="btn-danger" href="#contenido" data-toggle="modal"
+                                mat-mini-fab color="warn">
+                                <mat-icon>edit</mat-icon>
+                            </button>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="columnasAMostrar"></mat-header-row>
+                    <mat-row *matRowDef="let myRowData; columns: columnasAMostrar"></mat-row>
+                </mat-table>
+            </div>
+
+            <div class="text-right mt-4">
+                <div>
+                    <div class="modal fade" id="contenido" style="margin-top: 40px; margin-bottom: 30px;">
+                        <div class="modal-dialog text-center">
+                            <div class="modal-content ">
+                                <!--encabezado del modal-->
+                                <div class="modal-header">
+                                    <h2 class="modal-title">Actualizar Estudiante </h2>
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">&times;</button>
+                                </div>
+                                <!--cuerpo del modal-->
+                                <div class="modal-body">
+                                    <form class="text-left p-3 ">
+                                        <div class=" form-group">
+                                            <label class="" for="rut">RUT:</label>
+                                            <input class="form-control" type="text" name="rut" id="rut"
+                                                [(ngModel)]="cambios.rut">
+                                        </div>
+                                        <div class=" form-group">
+                                            <label class="" for="nombres">Nombres</label>
+                                            <input class="form-control" type="text" name="nombres" id="nombres"
+                                                [(ngModel)]="cambios.nombres">
+                                        </div>
+                                        <div class=" form-group">
+                                            <label class="" for="apellidos"> Apellidos </label>
+                                            <input class="form-control" type="text" name="apellidos" id="apellidos"
+                                                [(ngModel)]="cambios.apellidos">
+                                        </div>
+                                        <div class=" form-group">
+                                            <label class="" for="correo">Email</label>
+                                            <input class="form-control" type="email" name="correo" id="correo"
+                                                [(ngModel)]="cambios.correo">
+                                        </div>
+                                        <div class=" form-group">
+                                            <label class="" for="idCurso">Cursos</label>
+                                            <select class="custom-select" name="cambios.idCurso"
+                                                [(ngModel)]="cambios.idCurso">
+                                                <option disabled>Seleccione:</option>
+                                                <option value="PROGRAMA TU FUTURO">PROGRAMA TU FUTURO</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--footer-->
+                                <div class="modal-footer">
+                                    <button class="btn BtnDefault" type="reset" data-dismiss="modal" (click)="editar()">
+                                        actualizar </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
